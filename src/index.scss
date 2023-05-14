@@ -14,11 +14,26 @@ li {
 	list-style-type: none;
 }
 
+@mixin font {
+	font-family: 'Roboto';
+	font-style: normal;
+}
+
+@mixin between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .container {
 	max-width: 1400px;
 	width: 100%;
 	padding: 0 40px;
 	margin: 0 auto;
+}
+
+body {
+	@include font;
 }
 
 .row {

@@ -10,7 +10,7 @@ function Header() {
 			<div className="container">
 				<div className="header__body">
 					<div className="header__menu">
-						<div className="header__logo"><h1><a href="">Servise</a></h1></div>
+						<div className="header__logo"><h1><a href=""><span>S</span>ervise</a></h1></div>
 						<div className="header__menu-list">
 							<ul className="header__list">
 								<li className="header__link"><a href="#">Создать задание</a></li>
@@ -20,13 +20,16 @@ function Header() {
 						</div>
 					</div>
 					<div className="header__user user">
-						<div className="user__message">
+						<div className="user__alert">
+							<span className='user__alert__amount'>1</span>
 							<a href="">
-								<FontAwesomeIcon icon={faBell} />
+								<FontAwesomeIcon className='user__alert__icon' icon={faBell} />
 							</a>
 						</div>
 						<div className="user__icon">
-							<img src={userImg} />
+							<a href="#">
+								<img src={userImg} />
+							</a>
 						</div>
 					</div>
 				</div>

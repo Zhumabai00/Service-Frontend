@@ -1,14 +1,25 @@
 $headC: #FFF;
 $headB: #000;
 
+@mixin between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .header {
 	width: 100%;
 	background-color: $headC;
 	padding: 15px 0;
-	border-bottom: 1px solid $headB;
-	border-radius: 0 0 2px 2px;
+	border-bottom: 0.5px solid $headB;
+	border-radius: 0 0 1px 1px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	// box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
-	&__body {}
+
+	&__body {
+		@include between;
+	}
 
 	&__menu {
 		display: flex;
@@ -16,7 +27,12 @@ $headB: #000;
 		align-items: center;
 	}
 
-	&__logo {}
+	&__logo {
+		span {
+			color: tomato;
+			font-weight: 900;
+		}
+	}
 
 	&__menu-list {}
 
@@ -25,24 +41,60 @@ $headB: #000;
 		column-gap: 25px;
 	}
 
-	&__link {}
+	&__link {
+		a {
+			color: #000;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 
 	&__user {}
 }
 
-.container {}
-
 .user {
+	@include between;
+	column-gap: 25px;
 
-	&__message {}
+	&__alert {
+		width: 20px;
+		height: 20px;
+		position: relative;
 
-	&__icon {}
+		&__amount {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: tomato;
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			font-size: 13px;
+			text-align: center;
+			color: $headC;
+			overflow: hidden;
+		}
+
+		&__icon {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__icon {
+		width: 40px;
+		height: 40px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+	}
 }
-
-
-// this is a new branch
-// this is second new branch
-// this is second new branch
-// this is second new branch
-// this is second new branchs
-// this is second new branchs
