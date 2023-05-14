@@ -21,7 +21,7 @@ function Header() {
 					</div>
 					<div className="header__user user">
 						<div className="user__alert">
-							<span className='user__alert__amount'>1</span>
+							<span className='user__alert__amount'>11</span>
 							<a href="">
 								<FontAwesomeIcon className='user__alert__icon' icon={faBell} />
 							</a>

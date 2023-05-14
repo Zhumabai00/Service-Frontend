@@ -1,5 +1,5 @@
 $headC: #FFF;
-$headB: #000;
+$headB: #134A45;
 
 @mixin between {
 	display: flex;
@@ -15,7 +15,10 @@ $headB: #000;
 	border-radius: 0 0 1px 1px;
 	// box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-	/// NEW
+	background-color: $headC;
+	position: fixed;
+	top: 0;
+	left: 0;
 
 	&__body {
 		@include between;
@@ -28,6 +31,8 @@ $headB: #000;
 	}
 
 	&__logo {
+		color: #134A45;
+
 		span {
 			color: tomato;
 			font-weight: 900;
@@ -47,6 +52,7 @@ $headB: #000;
 
 			&:hover {
 				text-decoration: underline;
+				color: #134A45
 			}
 		}
 	}
@@ -74,7 +80,7 @@ $headB: #000;
 			top: 0;
 			right: 0;
 
-			font-size: 13px;
+			font-size: 10px;
 			text-align: center;
 			color: $headC;
 			overflow: hidden;
