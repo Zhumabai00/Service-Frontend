@@ -1,0 +1,48 @@
+$headC: #FFF;
+$headB: #000;
+
+.header {
+	width: 100%;
+	background-color: $headC;
+	padding: 15px 0;
+	border-bottom: 1px solid $headB;
+	border-radius: 0 0 2px 2px;
+
+	&__body {}
+
+	&__menu {
+		display: flex;
+		column-gap: 30px;
+		align-items: center;
+	}
+
+	&__logo {}
+
+	&__menu-list {}
+
+	&__list {
+		display: flex;
+		column-gap: 25px;
+	}
+
+	&__link {}
+
+	&__user {}
+}
+
+.container {}
+
+.user {
+
+	&__message {}
+
+	&__icon {}
+}
+
+
+// this is a new branch
+// this is second new branch
+// this is second new branch
+// this is second new branch
+// this is second new branchs
+// this is second new branchs
